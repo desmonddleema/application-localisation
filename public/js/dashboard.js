@@ -30,7 +30,7 @@
 fetch(
   "http://" +
     window.location.hostname +
-    ":3000/locale/getTranslations?page_id=1"
+    ":80/locale/getTranslations?page_id=1"
 ).then((res) => {
   res.json().then((data) => {
     let translations = data.PageLabels;
